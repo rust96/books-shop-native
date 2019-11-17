@@ -1,0 +1,138 @@
+body {
+  background-color: rgba(66, 183, 245, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Roboto';
+}
+
+.title {
+  padding-bottom: 20px;
+
+  font-size: 22px;
+  &_white {
+    color: white;
+  }
+  &_blue {
+    color: #4285F4;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 700px;
+  max-width: 100%;
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  width: 50%;
+  min-height: 440px;
+
+  padding: 30px;
+}
+
+.form {
+  &-wrapper {
+    background-color: white;
+  }
+}
+
+.books {
+  width: 50%;
+  background-color: #4285F4;
+  &__item {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    p {
+      padding-bottom: 10px;
+
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+
+.label {
+  display: block;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(0,0,0, .6);
+  font-size: 12px;
+  font-weight: 500;
+  &__text {
+    display: block;
+
+    padding-bottom: 5px;
+  }
+}
+
+.input {
+  display: block;
+
+  width: 100%;
+  height: 46px;
+
+  padding: 12px 20px;
+  margin-bottom: 10px;
+
+  outline: none;
+  border-top: 10px;
+  border-radius:3px;
+
+  background-color: rgba(0,0,0,.1);
+
+  color: rgba(0,0,0,.6);
+  font-size: 16px;
+  font-weight: bold;
+}
+.button {
+  width: 100%;
+  height: 40px;
+
+  margin-top: 10px;
+
+  background-color: white;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: #4285F4;
+  &_submit {
+    border: 2px solid #4285F4;
+
+    font-weight: bold;
+  }
+  &_save {
+    border: 3px solid #ff8800;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+
+    width: 350px;
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    width: 100%;
+  }
+}

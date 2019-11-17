@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Books shop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-wrapper block">
+        <h2 class="title title_blue">Добавьте книгу</h2>
+        <form class="form">
+          <label name="author" class="label">
+            <span class="label__text">Автор</span>
+            <input class="input" type="text" name="author" value="" required>
+          </label>
+          <label name="year" class="label">
+            <span class="label__text">Год издания</span>
+            <input class="input" type="number" name="year" value="" required>
+          </label>
+          <label name="bookName" class="label">
+            <span class="label__text">Название книги</span>
+            <input class="input" type="text" name="bookName" value="">
+          </label>
+          <label name="pages" class="label">
+            <span class="label__text">Количество страниц</span>
+            <input class="input" type="number" name="pages" value="">
+          </label>
+          <button type="submit" class="button button_submit">Добавить</button>
+        </form>
+      </div>
+
+      <div class="books block">
+        <h2 class="title title_white">Ваши книги</h2>
+        <div class="books__list"></div>
+      </div>
+    </div>
+  </body>
+</html>
